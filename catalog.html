@@ -20,10 +20,10 @@
             <ul class="site-nav__list">
                 <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="order.html">Оформление</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
             </ul>
         </nav>
     </div>
@@ -74,29 +74,88 @@
         <section class="catalog-products">
             <h2>Список товаров</h2>
             <div class="products-grid">
-            </div>
-        </section>
-    </section>
-    <section class="section">
-        <h2>Список товаров</h2>
-        <article class="product-card">
-            <h3 class="product-card__title">Товар 1</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 1000 руб.</p>
-            <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
-        </article>
-        <article class="product-card">
-            <h3 class="product-card__title">Товар 2</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 1500 руб.</p>
-            <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
-        </article>
-        <article class="product-card">
-            <h3 class="product-card__title">Товар 3</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 2000 руб.</p>
-            <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
-        </article>
+            <article class="product-card">
+                <img class="product-card__image" src="images/product-1.jpg" alt="Беспроводные наушники">
+                <h3 class="product-card__title">Наушники воздушные капсулы про</h3>
+                <p class="product-card__description">Беспроводные наушники с активным шумоподавлением от внешнего мира.</p>
+                <p class="product-card__price">Цена: 5000 руб.</p>
+                <div style="margin-top: auto; display: flex; gap: 10px;">
+                    <button class="button button--primary product-card__button" type="button" data-product="Беспроводные наушники" style="margin-top: 0;">Заказать</button>
+                    <a class="button button--secondary" href="product.html">Подробнее</a>
+            </article>
+            <article class="product-card">
+                <img class="product-card__image" src="images/product-2.jpg" alt="Игровая станция 5">
+                <h3 class="product-card__title">Игровая станция 5</h3>
+                <p class="product-card__description">Игровая станция. Идеальный вариант для гта 6.</p>
+                <p class="product-card__price">Цена: 120000 руб.</p>
+                <div style="margin-top: auto; display: flex; gap: 10px;">
+                    <button class="button button--primary product-card__button" type="button" data-product="Игровая станция 5" style="margin-top: 0;">Заказать</button>
+                    <a class="button button--secondary" href="product.html">Подробнее</a>
+            </article>
+            <article class="product-card">
+                <img class="product-card__image" src="images/product-3.jpg" alt="Микрофон">
+                <h3 class="product-card__title">Микрофон (не китайский) </h3>
+                <p class="product-card__description">Мощный и крутой микрофон. Выбор стримеров и блогеров.</p>
+                <p class="product-card__price">Цена: 8000 руб.</p>
+                <div style="margin-top: auto; display: flex; gap: 10px;">
+                    <button class="button button--primary product-card__button" type="button" data-product="Микрофон" style="margin-top: 0;">Заказать</button>
+                    <a class="button button--secondary" href="product.html">Подробнее</a>
+            </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="images/product-4.jpg" alt="Х коробка">
+                    <h3 class="product-card__title">Х коробка</h3>
+                    <p class="product-card__description">Игровая консоль для игр.</p>
+                    <p class="product-card__price">Цена: 40000 руб.</p>
+                    <div style="margin-top: auto; display: flex; gap: 10px;">
+                        <button class="button button--primary product-card__button" type="button" data-product="Х коробка" style="margin-top: 0;">Заказать</button>
+                        <a class="button button--secondary" href="product.html">Подробнее</a>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="images/product-5.jpg" alt="Нинтендо переключатель 2">
+                    <h3 class="product-card__title">Нинтендо переключатель 2</h3>
+                    <p class="product-card__description">Портативная игровая станция для фанатов покемонов и зельды.</p>
+                    <p class="product-card__price">Цена: 65000 руб.</p>
+                    <div style="margin-top: auto; display: flex; gap: 10px;">
+                        <button class="button button--primary product-card__button" type="button" data-product="Нинтендо переключатель 2" style="margin-top: 0;">Заказать</button>
+                        <a class="button button--secondary" href="product.html">Подробнее</a>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="images/product-6.jpg" alt="Рычаг управления">
+                    <h3 class="product-card__title">Рычаг управления</h3>
+                    <p class="product-card__description">Рычаг управления для игровой станции 4.</p>
+                    <p class="product-card__price">Цена: 7000 руб.</p>
+                    <div style="margin-top: auto; display: flex; gap: 10px;">
+                        <button class="button button--primary product-card__button" type="button" data-product="Рычаг управления" style="margin-top: 0;">Заказать</button>
+                        <a class="button button--secondary" href="product.html">Подробнее</a>
+                </article>
+                <article class="product-card">
+                <img class="product-card__image" src="images/product-7.jpg" alt="Игровая станция 4">
+                <h3 class="product-card__title">Игровая станция 4</h3>
+                <p class="product-card__description">Игровая станция. НЕ идеальный вариант для гта 6.</p>
+                <p class="product-card__price">Цена: 35000 руб.</p>
+                    <div style="margin-top: auto; display: flex; gap: 10px;">
+                        <button class="button button--primary product-card__button" type="button" data-product="Игровая станция 4" style="margin-top: 0;">Заказать</button>
+                        <a class="button button--secondary" href="product.html">Подробнее</a>
+            </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="images/product-8.jpg" alt="Наушники проводные">
+                    <h3 class="product-card__title">Наушники проводные</h3>
+                    <p class="product-card__description">Обычные проводные наушники (база).</p>
+                    <p class="product-card__price">Цена: 2000 руб.</p>
+                    <div style="margin-top: auto; display: flex; gap: 10px;">
+                        <button class="button button--primary product-card__button" type="button" data-product="Наушники проводные" style="margin-top: 0;">Заказать</button>
+                        <a class="button button--secondary" href="product.html">Подробнее</a>
+                </article>
+                <article class="product-card">
+                    <img class="product-card__image" src="images/product-9.jpg" alt="Флешка (рабочая)">
+                    <h3 class="product-card__title">Флешка (рабочая)</h3>
+                    <p class="product-card__description">Абсолютно точно функционирующее устройство хранения информации.</p>
+                    <p class="product-card__price">Цена: 1000 руб.</p>
+                    <div style="margin-top: auto; display: flex; gap: 10px;">
+                        <button class="button button--primary product-card__button" type="button" data-product="Флешка (рабочая)" style="margin-top: 0;">Заказать</button>
+                        <a class="button button--secondary" href="product.html">Подробнее</a>
+                </article>
+        </div>
     </section>
 </main>
 <footer>
