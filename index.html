@@ -19,24 +19,58 @@
             <ul class="site-nav__list">
                 <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="order.html">Оформление</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
                 <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-                <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
             </ul>
         </nav>
     </div>
 </header>
-
 <main>
     <section class="hero">
-        <h1>Учебный интернет-магазин</h1>
+        <h1>Учебный интернет-магазин техники</h1>
         <p>
             Это стартовая страница учебного frontend-проекта.
             В дальнейшем на её основе будет разработан многостраничный сайт
             интернет-магазина или каталога услуг.
         </p>
         <a class="button" href="#popular">Перейти к товарам</a>
+    </section>
+    <section class="section" id="popular">
+        <h2>Популярные товары</h2>
+        <div class="products-grid">
+            <article class="product-card">
+                <img class="product-card__image" src="images/product-1.jpg" alt="Беспроводные наушники">
+                <span class="product-card__badge">Хит продаж</span>
+                <h3 class="product-card__title">Наушники воздушные капсулы про</h3>
+                <p class="product-card__description">Беспроводные наушники с активным шумоподавлением от внешнего мира.</p>
+                <p class="product-card__price">Цена: 5000 руб.</p>
+                <div style="margin-top: auto; display: flex; gap: 10px;">
+                    <button class="button button--primary product-card__button" type="button" data-product="Беспроводные наушники" style="margin-top: 0;">Заказать</button>
+                    <a class="button button--secondary" href="product.html">Подробнее</a>
+            </article>
+            <article class="product-card">
+                <img class="product-card__image" src="images/product-2.jpg" alt="Игровая станция 5">
+                <span class="product-card__badge">Хит продаж</span>
+                <h3 class="product-card__title">Игровая станция 5</h3>
+                <p class="product-card__description">Игровая станция. Идеальный вариант для гта 6.</p>
+                <p class="product-card__price">Цена: 120000 руб.</p>
+                <div style="margin-top: auto; display: flex; gap: 10px;">
+                    <button class="button button--primary product-card__button" type="button" data-product="Игровая станция 5" style="margin-top: 0;">Заказать</button>
+                    <a class="button button--secondary" href="product.html">Подробнее</a>
+            </article>
+            <article class="product-card">
+                <img class="product-card__image" src="images/product-3.jpg" alt="Микрофон">
+                <span class="product-card__badge">Хит продаж</span>
+                <h3 class="product-card__title">Микрофон (не китайский) </h3>
+                <p class="product-card__description">Мощный и крутой микрофон. Выбор стримеров и блогеров.</p>
+                <p class="product-card__price">Цена: 8000 руб.</p>
+                <div style="margin-top: auto; display: flex; gap: 10px;">
+                    <button class="button button--primary product-card__button" type="button" data-product="Микрофон" style="margin-top: 0;">Заказать</button>
+                    <a class="button button--secondary" href="product.html">Подробнее</a>
+            </article>
+        </div>
     </section>
     <section class="section" id="advantages">
         <h2>Преимущества проекта</h2>
@@ -47,29 +81,6 @@
             <li>подготовка к разработке многостраничного сайта.</li>
         </ul>
     </section>
-    <section class="section" id="popular">
-        <h2>Популярные товары</h2>
-        <div class="products-grid">
-            <article class="product-card">
-                <h3 class="product-card__title">Товар 1</h3>
-                <p class="product-card__description">Краткое описание учебного товара.</p>
-                <p class="product-card__price">Цена: 1000 руб.</p>
-                <button class="button product-card__button" type="button" data-product="Товар 1">Заказать</button>
-            </article>
-            <article class="product-card">
-                <h3 class="product-card__title">Товар 2</h3>
-                <p class="product-card__description">Краткое описание учебного товара.</p>
-                <p class="product-card__price">Цена: 1500 руб.</p>
-                <button class="button product-card__button" type="button" data-product="Товар 2">Заказать</button>
-            </article>
-            <article class="product-card">
-                <h3 class="product-card__title">Товар 3</h3>
-                <p class="product-card__description">Краткое описание учебного товара.</p>
-                <p class="product-card__price">Цена: 2000 руб.</p>
-                <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
-            </article>
-        </div>
-    </section>
     <aside class="aside-info">
         <h2>Информация для студентов</h2>
         <p>
@@ -79,12 +90,10 @@
         </p>
     </aside>
 </main>
-
 <footer id="contacts">
     <p>&copy; 2026 Учебный проект. Все права защищены.</p>
     <p>Дисциплина: Фронтенд и бэкенд разработка</p>
 </footer>
-
 <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
     <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
     <form class="order-form" id="order-form" action="#" method="post" novalidate>
